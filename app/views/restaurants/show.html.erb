@@ -1,0 +1,12 @@
+<h1><%= @restaurant.name %></h1>
+
+<ul>
+<li><%= @restaurant.address %></li>
+<li><%= @restaurant.category %></li>
+<li><%= @restaurant.phone_number %></li>
+</ul>
+
+
+<%= link_to "List Restaurants", restaurants_path, class: "btn btn-warning p-2"%>
+
+<%= link_to "Leave a review", new_restaurant_review_path(@restaurant), class: "btn btn-warning p-2"%>
